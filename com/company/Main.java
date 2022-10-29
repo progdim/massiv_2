@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
+        //Задание 2
         int sum = 0;
         for (int i = 0; i < generateRandomArray().length; i++) {
             sum = sum + generateRandomArray()[i];
@@ -14,6 +15,7 @@ public class Main {
         System.out.println("Минимальная сумма трат за день составила " + min(generateRandomArray()) + " рублей.");
         System.out.println("Максимальная сумма трат за день составила " + max(generateRandomArray()) + "  рублей");
 
+//Задание 3
         float sumMonths = 0f;
         sumMonths = sum / generateRandomArray().length;
         System.out.println("Средняя сумма трат за месяц составила " + sumMonths +  " рублей");
@@ -23,7 +25,7 @@ public class Main {
 
 
     }
-
+//Генерим массив
     int[] arr = generateRandomArray();
 
     public static int[] generateRandomArray() {
@@ -35,7 +37,7 @@ public class Main {
 
         return arr;
     }
-
+// Задание 2
     public static int min (int[] ints){
         int min = ints[0];
         for (int i = 0; i < ints.length; i++) {
@@ -56,7 +58,7 @@ public class Main {
 
 
 
-
+// Задание 4
     public static char[] getReverseFullName () {
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length + 1; i >= 0; i++) {
