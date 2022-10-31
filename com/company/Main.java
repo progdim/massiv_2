@@ -20,9 +20,20 @@ public class Main {
         sumMonths = sum / generateRandomArray().length;
         System.out.println("Средняя сумма трат за месяц составила " + sumMonths +  " рублей");
 
+//задание4
 
-        System.out.println(getReverseFullName());
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int n = reverseFullName.length;
+        for (int i = 0; i < n /2;  i++) {
+            int tmp = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 1];
+            reverseFullName[reverseFullName.length - i - 1] = (char) tmp;
+        }
+        System.out.println();
 
+        for (int i = 0; i < reverseFullName.length; i++) {
+            System.out.print(reverseFullName[i]);
+        }
 
     }
 //Генерим массив
@@ -58,17 +69,9 @@ public class Main {
 
 
 
-// Задание 4
-    public static char[] getReverseFullName () {
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length + 1; i >= 0; i++) {
-         //   System.out.print(reverseFullName[i]);
-        }
-        String str = new String(reverseFullName);
 
 
-        return reverseFullName;
-    }
+
 }
 
 
