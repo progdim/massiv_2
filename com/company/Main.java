@@ -35,6 +35,12 @@ public class Main {
             System.out.print(reverseFullName[i]);
         }
 
+        // исправлено
+        System.out.println();
+        for (int i = reverseFullName.length - 1; i >= 0; i--){
+            System.out.print(reverseFullName[i]);
+        }
+
     }
 //Генерим массив
     int[] arr = generateRandomArray();
